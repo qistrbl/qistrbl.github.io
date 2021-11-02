@@ -1,13 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my first git</title>
+	<meta charset="UTF-8">
+	<title>qis in wonderland</title>
+    <link rel="icon" href="images/IMG_5523%20(2).JPG" type="image/gif" sizes="16x16">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+}
+header {
+	height: 100px;
+	background: #262626;
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+}
+.logo {
+	width: 30%;
+	float: left;
+	line-height: 100px;
+}
+.logo a {
+	text-decoration: none;
+	font-size: 30px;
+	font-family: poppins;
+	color: #fff;
+	letter-spacing: 5px;
+}
+nav {
+	float: right;
+	line-height: 100px;
+}
+nav a {
+	text-decoration: none;
+	font-family: poppins;
+	letter-spacing: 4px;
+	font-size: 15px;
+	margin: 0 10px;
+	color: #fff;
+}
+.banner-area {
+	width: 100%;
+	height: 500px;
+	position: fixed;
+	top: 100px;
+	background-image: url(images/anbu2.JPEG);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+.banner-area h2 {
+	padding-top: 8%;
+	font-size: 70px;
+	font-family: poppins;
+	text-transform: uppercase;
+	color: #fff;
+    text-align: center;
+}
+.content-area {
+	width: 100%;
+	position: relative;
+	top: 450px;
+	background: #f1f1f1;
+	height: 100%;
+    align-content: left;
+}
+.content-area h2 {
+	font-family: poppins;
+	letter-spacing: 4px;
+	padding-top: 30px;
+	font-size: 30px;
+	margin: 0;
+}
+.content-area p {
+	padding: 2% 0px;
+	font-family: poppins;
+	line-height: 30px;
+}
+        .container{
+            display: flex;
+            align-items: center;
+        }
+        img{
+            max-width: 100%;
+        }
+        .img-col1{
+            flex-basis: 40%;
+            padding-right: 200px;
+            padding-bottom: 30px;
+            padding-top: 30px;
+        }
+        .text-col{
+            max-width: 50%;
+            padding-left: 20px;
+        }
+        .img-col2{
+            flex-basis: 40%;
+            padding-left: 300px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .img-col3{
+            flex-basis: 40%;
+            padding-right: 180px;
+            padding-bottom: 30px;
+            padding-top: 30px;
+        }
+        .row {
+            display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+            align-items: center;
+        }
+ .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+        .fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+ul.b {
+  list-style-type: square;
+  font-family: poppins;
+}
+</style>
 </head>
 <body>
-    <h1>my first git</h1>
-    <p>welcome to my first git</p>
+	<div class="box-area">
+		<header>
+			<div class="wrapper">
+				<div class="logo">
+					<a href="index.html"><img src="images/ikonlogoo.png" width="140px"></a>
+				</div>
+				<nav>
+					<a href="index.html">me</a> 
+                    <a href="photo_Gallery.html">gallery</a> 
+                    <a href="about_us.html">infos</a>
+			</div>
+		</header>
+		<div class="banner-area">
+            <h2>me</h2>
+		</div>
+		<div class="content-area">
+			<div class="wrapper">
+				<h2>about me</h2>
+                <div class="container">
+                    <div class="row">
+                    <div class="img-col1">
+                        <img src="images/qisti.jpg">
+                    </div>
+                    <div class="text-col">
+                        <P><b>Personal Info</b></P>
+                        <ul class="b">
+                            <li>Qisti Nadinie binti Mazlan</li>
+                            <li>2021149585</li>
+                            <li>Temerloh, Pahang</li>
+                            <li>+6017 974 0486</li>
+                            <li>qistinadinie@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="text-col">
+                        <p><b>Academic Info</b></p>
+                        <ul class="b">
+                            <li>SM Tengku Ampuan Afzan</li>
+                            <li>Diploma in Computer Science</li>
+                            <li>Bachelor Degree in Computer Science</li>
+                        </ul><br>
+                        <p><b>Working Experience</b></p>
+                        <ul class="b">
+                            <li>Industrial Training at Zpeed Solutions Sdn Bhd</li>
+                        </ul>
+                    </div>
+                    <div class="img-col2">
+                        <img src="images/IMG_1534.jpg">
+                    </div>
+                        <div class="img-col3">
+                        <img src="images/qisti2.jpg">
+                    </div>
+                    <div class="text-col">
+                        <a href="https://www.facebook.com/qistrbl/" class="fa fa-facebook"></a>
+                        <a href="https://twitter.com/qistrbl" class="fa fa-twitter"></a>
+                        <a href="www.linkedin.com/in/qistinadinie" class="fa fa-linkedin"></a>
+                        <a href="https://www.instagram.com/shxxqis131/" class="fa fa-instagram"></a>
+                        <a href="https://www.pinterest.com/qistinadinie/" class="fa fa-pinterest"></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
