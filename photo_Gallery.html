@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>qis in wonderland</title>
+    <link rel="icon" href="images/IMG_5523%20(2).JPG" type="image/gif" sizes="16x16">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+}
+header {
+	height: 100px;
+	background: #262626;
+	width: 100%;
+	z-index: 10;
+	position: fixed;
+}
+.logo {
+	width: 30%;
+	float: left;
+	line-height: 100px;
+}
+.logo a {
+	text-decoration: none;
+	font-size: 30px;
+	font-family: poppins;
+	color: #fff;
+	letter-spacing: 5px;
+}
+nav {
+	float: right;
+	line-height: 100px;
+}
+nav a {
+	text-decoration: none;
+	font-family: poppins;
+	letter-spacing: 4px;
+	font-size: 15px;
+	margin: 0 10px;
+	color: #fff;
+}
+.banner-area {
+	width: 100%;
+	height: 500px;
+	position: fixed;
+	top: 100px;
+	background-image: url(images/h2.JPEG);
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+}
+.banner-area h2 {
+	padding-top: 8%;
+	font-size: 70px;
+	font-family: poppins;
+	text-transform: uppercase;
+	color: #fff;
+    text-align: center;
+}
+.content-area {
+	width: 100%;
+	position: relative;
+	top: 450px;
+	background: #f1f1f1;
+	height: 100%;
+    align-content: left;
+}
+.content-area h2 {
+	font-family: poppins;
+	letter-spacing: 4px;
+	padding-top: 30px;
+	font-size: 30px;
+	margin: 0;
+}
+.content-area h4 {
+	font-family: poppins;
+	letter-spacing: 4px;
+	padding-top: 30px;
+	font-size: 13px;
+	margin: 0;
+}
+.content-area p {
+	padding: 2% 0px;
+	font-family: poppins;
+	line-height: 30px;
+}
+.container{
+            position: relative;
+            width: 1100px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 30px;
+        }
+        .container .card{
+            position: relative;
+            max-width: 300px;
+            height: 215px;
+            background: #fff;
+            margin: 40px 20px;
+            padding: 30px 25px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+            transition: 0.3s ease-in-out;
+        }
+        .container .card:hover{
+            height: 490px;
+            
+        }
+        .container .card .imgBx{
+            position: relative;
+            width: 260px;
+            height: 260px;
+            top: -60px;
+            left: 0;
+            z-index: 1;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+        .container .card .imgBx img{
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .container .card .content{
+            position: relative;
+            margin-top: -140px;
+            padding: 10px 15px;
+            text-align: center;
+            color: #111;
+            visibility: hidden;
+            opacity: 0;transition: 0.3s ease-in-out;
+        }
+        .container .card:hover .content{
+            visibility: visible;
+            opacity: 1;
+            margin-top: -40px;
+            transition-delay: 0.3s;
+        }
+        .main{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.main h1{
+	position: relative;
+	height: auto;
+	width: 550px;
+	left: 50%;
+	transform: translateX(-50%);
+	margin:5% 0 2% 0;
+	text-align: center;
+	font-size: 2.8em;
+	font-weight: 650;
+	letter-spacing: 1.5px;
+	color:#017bf5;
+	border-left: 5px solid #017bf5;
+	border-right: 5px solid #017bf5;
+	background:rgba(0, 0, 0, 0.05);
+}
+.main p{
+	position: relative;
+	/*padding: 2% 0px;*/
+	font-family: poppins;
+	line-height: 30px;
+    
+}
+.main .gallery{
+	position: relative;
+	height: auto;
+	width: 90%;
+	margin: auto;
+	/*padding: 45px 0;*/
+	display: grid;
+	grid-template-columns: auto auto auto auto; /*i write auto four time because we want four rows*/
+	grid-gap: 2vh;
+	grid-auto-flow: dense;
+}
+.main .gallery .img{
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9 );
+	border-radius: 2px;
+}
+.main .gallery .img:first-child{
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.main .gallery .img:nth-child(2n+3){
+	grid-row-start: span 2;
+}
+.main .gallery .img:nth-child(4n+5){
+	grid-column-start: span 2;
+	grid-row-start: span 2;
+}
+.main .gallery .img:nth-child(6n+7){
+	grid-row-start: span 1;
+}
+.main .gallery .img:nth-child(8n+9){
+	grid-column-start: span 1;
+	grid-row-start: span 1;
+}
+.main .gallery .img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 2px;
+	transition: 0.3s ease-in-out;
+    backface-visibility: hidden;
+}
+.main .gallery .img .middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.main .gallery .img:hover img{
+	filter: brightness(0.5) grayscale(100);
+}
+.main .gallery .img:hover .middle {
+  opacity: 1;
+}
+.text {
+  background-color: #9B0101;
+    font-family: poppins;
+  color: white;
+  font-size: 14px;
+  padding: 16px 32px;
+}
+@media only screen and (max-width: 768px){
+	.main h1{
+		font-size: 1.8em;
+		width: 400px;
+	}
+	.main p{
+		font-size: 1.2em;
+	}
+	.main .gallery{
+		display: grid;
+		grid-template-columns: auto auto auto;
+	}
+}
+@media only screen and (max-width: 430px){
+	.main h1{
+		font-size: 1.2em;
+		width: 300px;
+	}
+	.main p{
+		font-size: 0.89em;
+	}
+	.main .gallery{
+		display: block;
+	}
+	.main .gallery .img{
+		display: block;
+		width: 100%;
+		height: 100%;
+		margin:2% 0;
+	}
+	.main .gallery .img img{
+		display: block;
+		filter: brightness(1) grayscale(0);
+	}
+}
+.column1 {
+  float: left;
+  width: 30%;
+  padding: 5px;
+  padding-bottom: 30px;
+    margin: auto;
+    flex-basis: 40%;
+            padding-right: 10px;
+            padding-top: 30px;
+    padding-left: 240px;
+}
+        .column2 {
+  float: left;
+  width: 30%;
+  padding: 5px;
+  padding-bottom: 30px;
+    margin: auto;
+    flex-basis: 40%;
+            padding-top: 30px;
+}
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+    margin: auto;
+    display: -ms-flexbox; /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap; /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 4px;
+            align-items: center;
+}
+</style>
+</head>
+<body>
+	<div class="box-area">
+		<header>
+			<div class="wrapper">
+				<div class="logo">
+					<a href="index.html"><img src="images/ikonlogoo.png" width="140px"></a>
+				</div>
+				<nav>
+					<a href="index.html">me</a> 
+                    <a href="photo_Gallery.html">gallery</a> 
+                    <a href="about_us.html">infos</a> 
+                    <!--<a href="ikon.html">ikon</a> 
+                    <a href="ikonics.html">ikonics</a>-->
+				</nav>
+			</div>
+		</header>
+		<div class="banner-area">
+            <h2>GALLERY</h2>
+		</div>
+		<div class="content-area">
+			<div class="wrapper">
+				<h2 align="center">pictures create memories</h2>
+                <div class="main">
+                    <p align="center">"Only photograph what you love."</p>
+                    <div class="gallery">
+                        <div class="img">
+                            <img src="images/mrclan.jpg" />
+                            <div class="middle">
+                                <div class="text">THE MR CLAN</div>
+                            </div>
+                        </div>
+                        <div class="img">
+                            <img src="images/14.jpg" />
+                            <div class="middle">
+                                <div class="text">Mom & Dad</div>
+                            </div>
+                        </div>
+                        <div class="img">
+                            <img src="images/12.jpg" />
+                            <div class="middle">
+                                <div class="text">Nami Island in 2018</div>
+                            </div>
+                        </div>
+                        <div class="img">
+                            <img src="images/1.jpg" />
+                            <div class="middle">
+                                <div class="text">Mount Erciyes in 2020</div>
+                            </div>
+                        </div>
+                        <div class="img">
+                            <img src="images/2.jpg" />
+                            <div class="middle">
+                                <div class="text">wearing hanbok with sissy</div>
+                            </div>
+                        </div>
+                        <div class="img">
+                            <img src="images/i1.jpg" />
+                            <div class="middle">
+                                <div class="text">UiTMR besties</div>
+                            </div>
+                        </div>
+                        <div class="img">
+                            <img src="images/k3.jpg" />
+                            <div class="middle">
+                                <div class="text">kpop besties</div>
+                            </div>
+                        </div>
+                        <div class="img">
+                            <img src="images/i13.jpg" />
+                            <div class="middle">
+                                <div class="text">favourite people since 2013 and counting</div>
+                            </div>
+                        </div>
+                        <div class="img">
+                            <img src="images/i3.jpg" />
+                            <div class="middle">
+                                <div class="text">koreaboo squad</div>
+                            </div>
+                        </div>
+                        <div class="img">
+                            <img src="images/raub.jpg" />
+                            <div class="middle">
+                                <div class="text">raub mates</div>
+                            </div>
+                        </div>
+                        <div class="img">
+                            <img src="images/i27.jpg" />
+                            <div class="middle">
+                                <div class="text">we fought a lot but now we are besties</div>
+                            </div>
+                        </div>
+                        <div class="img">
+                            <img src="images/22.jpg" />
+                            <div class="middle">
+                                <div class="text">going up the mountain!</div>
+                            </div>
+                        </div>
+                        <div class="img">
+                            <img src="images/mma.jpg" />
+                            <div class="middle">
+                                <div class="text">seven lomls</div>
+                            </div>
+                        </div>
+                        <div class="img">
+                            <img src="images/k14.jpg" />
+                            <div class="middle">
+                                <div class="text">kpop bring us together</div>
+                            </div>
+                        </div>
+                        <div class="img">
+                            <img src="images/25.jpg" />
+                            <div class="middle">
+                                <div class="text">the kids</div>
+                            </div>
+                        </div>
+                    </div>
+                </div><br><br>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
